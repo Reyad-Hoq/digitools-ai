@@ -15,8 +15,12 @@ const Banner = () => {
             software—all in one place. Start creating faster today.
             Explore Products
           </p>
-          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white mx-2 hover:scale-103 delay-100">Explore Products</button>
-          <button className="btn border-2 border-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Watch Demo</button>
+          <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white mx-2 hover:scale-103 delay-100 hover:bg-linear-to-r hover:from-[#9514FA] hover:to-[#4F39F6]">Explore Products</button>
+          <div className="inline-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full p-px">
+            <button className="btn bg-base-100 rounded-full">
+              <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent ">Watch Demo</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
