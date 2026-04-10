@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with modern templates and ATS optimization.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "file-text"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build your personal portfolio website with ease.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Responsive design",
+      "Custom domains",
+      "SEO optimization"
+    ],
+    "icon": "globe"
+  },
+  {
+    "id": 3,
+    "name": "Job Tracker",
+    "description": "Track your job applications and interviews efficiently.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Application tracking",
+      "Interview reminders",
+      "Analytics dashboard"
+    ],
+    "icon": "briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Cover Letter Generator",
+    "description": "Generate personalized cover letters in seconds.",
+    "price": 12,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI-powered writing",
+      "Multiple formats",
+      "Instant download"
+    ],
+    "icon": "edit"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Master",
+    "description": "Practice and prepare for interviews with mock questions.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Mock interviews",
+      "Common questions",
+      "Performance feedback"
+    ],
+    "icon": "mic"
+  },
+  {
+    "id": 6,
+    "name": "LinkedIn Optimizer",
+    "description": "Optimize your LinkedIn profile to attract recruiters.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Profile analysis",
+      "Keyword optimization",
+      "Headline suggestions"
+    ],
+    "icon": "linkedin"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Starter Pack",
+    "description": "Everything you need to kickstart your freelancing career.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Proposal templates",
+      "Client management tools",
+      "Invoice generator"
+    ],
+    "icon": "dollar-sign"
+  },
+  {
+    "id": 8,
+    "name": "Skill Builder Courses",
+    "description": "Access curated courses to upgrade your skills.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Video lessons",
+      "Certificates",
+      "Expert instructors"
+    ],
+    "icon": "book"
+  }
+]
