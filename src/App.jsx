@@ -7,7 +7,7 @@ import Product from './products/product'
 function App() {
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-5">
       <Navbar />
       <Banner />
       <Summary />

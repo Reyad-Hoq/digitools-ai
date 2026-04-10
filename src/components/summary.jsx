@@ -1,8 +1,8 @@
 import React from "react";
 const Summary = () => {
   return (
-    <div className="h-full lg:h-40 w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] mt-10">
-      <div className="h-full w-9/12 mx-auto flex flex-col lg:flex-row items-center md:justify-around">
+    <div className="h-full lg:h-40 w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] mt-10 py-5">
+      <div className="h-full w-full md:w-9/12 mx-auto flex flex-col lg:flex-row items-center md:justify-around">
         <div className="text-center">
           <h2 className="text-6xl font-bold text-white">50K+</h2>
           <p className="text-base-100 text-lg">Active Users</p>

@@ -1,7 +1,7 @@
 import React from "react";
 const Product = () => {
   return (
-    <div className="hero bg-base-100 hfull w-9/12 mx-auto mt-10">
+    <div className="hero bg-base-100 h-full w-full md:w-9/12 mx-auto mt-10">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-4xl font-bold">Premium Digital Tools</h1>
