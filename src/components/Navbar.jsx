@@ -2,18 +2,20 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="shadow">
+    <div className="shadow-lg navbar bg-base-100">
       <div className="navbar bg-base-100 w-9/12 mx-auto">
         <div className="flex-1">
           <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-bold">DigiTools</a>
         </div>
-        <ul className="menu menu-horizontal px-1">
-          <li><a>Products</a></li>
-          <li><a>Features</a></li>
-          <li><a>Pricing</a></li>
-          <li><a>Testimonials</a></li>
-          <li><a>FAQ</a></li>
-        </ul>
+        <div>
+          <ul className="menu menu-horizontal px-1 text-[18px] font-medium">
+            <li><a>Products</a></li>
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Testimonials</a></li>
+            <li><a>FAQ</a></li>
+          </ul>
+        </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
