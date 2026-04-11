@@ -4,7 +4,7 @@ const Card = ({ product, selectedCart, setSelectedCart, price, setPrice }) => {
   const [isBuying, setIsBuying] = useState(false);
   const handleCartSelected = () => {
     setIsBuying(!isBuying);
-    toast(isBuying ? "Removed from cart" : "Added to cart")
+    toast.success(isBuying ? "Removed from cart" : "Added to cart")
     setSelectedCart([...selectedCart, product]);
     setPrice(price + product.price);
   }
