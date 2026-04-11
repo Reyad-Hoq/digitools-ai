@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="shadow navbar bg-base-100">
+    <div className="shadow-lg navbar bg-base-100">
       <div className="navbar w-full bg-base-100 md:w-9/12 mx-auto">
         <div className="flex-1">
           <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-bold">DigiTools</a>
