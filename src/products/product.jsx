@@ -1,10 +1,12 @@
 import React, { use, useState } from "react";
 import Availableproduct from "./Availableproduct";
+import Cart from "../components/Cart";
 const Product = ({ productsPromise }) => {
   console.log(productsPromise);
   const products = use(productsPromise);
   console.log(products);
   const [selectedTab, setSelectedTab] = useState("products");
+  const [selectedCart, setSelectedCart] = useState([]);
   return (
     <>
       <div className="hero bg-base-100 h-full w-full md:w-9/12 mx-auto mt-10">
@@ -26,7 +28,7 @@ const Product = ({ productsPromise }) => {
                 <button onClick={() => setSelectedTab("cart")}
                   class={`btn btn-ghost rounded-full ${selectedTab === "cart" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-md px-6 py-2 text-white font-semibold btn" : ""}  
                 `}>
-                  Cart <span></span>
+                  Cart{selectedCart.length > 0 && <span >({selectedCart.length})</span>}
                 </button>
               </div>
             </div>
@@ -34,9 +36,7 @@ const Product = ({ productsPromise }) => {
         </div>
       </div>
       {
-        selectedTab === "cart" ? <div className="flex justify-center items-center min-h-screen">
-          you have no items in your cart
-        </div> : <Availableproduct products={products} />
+        selectedTab === "cart" ? <Cart selectedCart={selectedCart} setSelectedCart={setSelectedCart} /> : <Availableproduct products={products} selectedCart={selectedCart} setSelectedCart={setSelectedCart} />
       }
 
     </>
