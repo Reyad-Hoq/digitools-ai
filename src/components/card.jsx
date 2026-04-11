@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-const Card = ({ product, selectedCart, setSelectedCart }) => {
+const Card = ({ product, selectedCart, setSelectedCart, price, setPrice }) => {
   const [isBuying, setIsBuying] = useState(false);
   const handleCartSelected = () => {
     setIsBuying(!isBuying);
     toast(isBuying ? "Removed from cart" : "Added to cart")
     setSelectedCart([...selectedCart, product]);
+    setPrice(price + product.price);
   }
   return (
     <div className="card bg-base-100 shadow-lg">

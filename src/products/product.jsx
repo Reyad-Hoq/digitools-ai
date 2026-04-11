@@ -7,6 +7,7 @@ const Product = ({ productsPromise }) => {
   console.log(products);
   const [selectedTab, setSelectedTab] = useState("products");
   const [selectedCart, setSelectedCart] = useState([]);
+  const [price, setPrice] = useState(0);
   return (
     <>
       <div className="hero bg-base-100 h-full w-full md:w-9/12 mx-auto mt-10">
@@ -36,7 +37,16 @@ const Product = ({ productsPromise }) => {
         </div>
       </div>
       {
-        selectedTab === "cart" ? <Cart selectedCart={selectedCart} setSelectedCart={setSelectedCart} /> : <Availableproduct products={products} selectedCart={selectedCart} setSelectedCart={setSelectedCart} />
+        selectedTab === "cart" ? <Cart
+          selectedCart={selectedCart}
+          setSelectedCart={setSelectedCart}
+          price={price}
+          setPrice={setPrice} /> :
+          <Availableproduct products={products}
+            selectedCart={selectedCart}
+            setSelectedCart={setSelectedCart}
+            price={price}
+            setPrice={setPrice} />
       }
 
     </>
