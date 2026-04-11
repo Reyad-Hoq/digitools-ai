@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/banner'
 import Summary from './components/summary'
 import Product from './products/product'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProducts = async () => {
   const res = await fetch('data/data.json');
@@ -22,6 +23,8 @@ function App() {
       </div>}>
         <Product productsPromise={productsPromise} />
       </Suspense>
+      {/* Toast Container */}
+      <ToastContainer />
     </div>
   )
 }

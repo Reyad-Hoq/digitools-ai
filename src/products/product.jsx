@@ -28,10 +28,8 @@ const Product = ({ productsPromise }) => {
                 `}>
                   Cart <span></span>
                 </button>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>

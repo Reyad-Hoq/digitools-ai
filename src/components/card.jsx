@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 const Card = ({ product }) => {
+  const [isBuying, setIsBuying] = useState(false);
   return (
     <div className="card bg-base-100 shadow-lg">
       <div className="card-body">
@@ -19,7 +21,11 @@ const Card = ({ product }) => {
           </li>)}
         </ul>
         <div className="mt-6">
-          <button className="btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Buy Now</button>
+          <button className="btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white"
+            disabled={isBuying} onClick={() => { setIsBuying(!isBuying); toast(isBuying ? "Removed from cart" : "Added to cart") }}
+          >
+            {isBuying ? "Remove from Cart" : "Buy Now"}
+          </button>
         </div>
       </div>
     </div >
