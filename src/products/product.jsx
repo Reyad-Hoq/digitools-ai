@@ -26,7 +26,7 @@ const Product = ({ productsPromise }) => {
                 <button onClick={() => setSelectedTab("cart")}
                   class={`btn btn-ghost rounded-full ${selectedTab === "cart" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-md px-6 py-2 text-white font-semibold btn" : ""}  
                 `}>
-                  Cart (2)
+                  Cart <span></span>
                 </button>
 
               </div>
@@ -35,7 +35,12 @@ const Product = ({ productsPromise }) => {
           </div>
         </div>
       </div>
-      <Availableproduct products={products} />
+      {
+        selectedTab === "cart" ? <div className="flex justify-center items-center min-h-screen">
+          you have no items in your cart
+        </div> : <Availableproduct products={products} />
+      }
+
     </>
   );
 }
