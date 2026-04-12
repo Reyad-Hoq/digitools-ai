@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/banner'
 import Summary from './components/summary'
 import Product from './products/product'
+import Account from './components/Account'
 import { ToastContainer } from 'react-toastify'
 
 const fetchProducts = async () => {
@@ -23,6 +24,7 @@ function App() {
       </div>}>
         <Product productsPromise={productsPromise} />
       </Suspense>
+      <Account />
       {/* Toast Container */}
       <ToastContainer />
     </div>
