@@ -25,7 +25,7 @@ function App() {
       </div>}>
         <Product productsPromise={productsPromise} />
       </Suspense>
-      <div className="min-h-screen space-y-2">
+      <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-200">
         <Heading />
         <Account />
       </div>
