@@ -30,8 +30,8 @@ const Account = () => {
           />
         </div>
         <div className="card-body items-center text-center">
-          <h2 className="card-title">Create Account</h2>
-          <p className="text-gray-500">Sign up for free in seconds. No credit card required to get started.</p>
+          <h2 className="card-title">Choose Products</h2>
+          <p className="text-gray-500">Browse our catalog and select the toolsthat fit your needs.</p>
         </div>
       </div>
       <div className="card bg-base-100 w-full shadow-lg items-center p-10">
@@ -44,8 +44,8 @@ const Account = () => {
           />
         </div>
         <div className="card-body items-center text-center">
-          <h2 className="card-title">Create Account</h2>
-          <p className="text-gray-500">Sign up for free in seconds. No credit card required to get started.</p>
+          <h2 className="card-title">Start Creating</h2>
+          <p className="text-gray-500">Download and start using your premium tools immediately.</p>
         </div>
       </div>
     </div>
