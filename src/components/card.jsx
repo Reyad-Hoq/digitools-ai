@@ -10,7 +10,7 @@ const Card = ({ product, selectedCart, setSelectedCart, price, setPrice }) => {
   }
   return (
     <div className="card bg-base-100 shadow-lg">
-      <div className="card-body">
+      <div className="card-body space-y-2">
         <div className="flex justify-end">
           <span className={`badge badge-lg badge-soft text-sm py-1 px-2 ${product.tag === "popular" ? "badge-primary" : product.tag === "new" ? "badge-success" : "badge-warning "}`}>{product.tag}</span>
         </div>
@@ -20,7 +20,7 @@ const Card = ({ product, selectedCart, setSelectedCart, price, setPrice }) => {
         <h2 className="text-3xl font-bold">{product.name}</h2>
         <p className="text-lg font-semibold text-gray-500">{product.description}</p>
         <span className="text-xl">${product.price}/{product.period === "monthly" ? "mo" : product.period === "yearly" ? "yr" : "one-time"}</span>
-        <ul className="mt-6 flex flex-col gap-2 text-xs">
+        <ul className="mt-6 flex flex-col gap-2">
           {product.features.map(feature => <li>
             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
             <span>{feature}</span>
