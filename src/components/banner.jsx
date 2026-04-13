@@ -9,8 +9,8 @@ const Banner = () => {
           className=" w-9/12 lg:max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="md:text-5xl font-bold">Supercharge Your <br />Digital Workflow</h1>
-          <p className="py-6">
+          <h1 className=" text-3xl md:text-5xl font-bold">Supercharge Your <br />Digital Workflow</h1>
+          <p className="py-6 text-sm md:text-lg text-gray-500">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today.
             Explore Products
