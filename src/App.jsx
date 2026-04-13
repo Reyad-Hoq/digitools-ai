@@ -21,25 +21,27 @@ function App() {
   const productsPromise = fetchProducts();
   return (
     <div>
-      <Navbar />
-      <Banner />
-      <Summary />
-      <Suspense fallback={<div className="flex justify-center items-center min-h-screen">
-        <span className="loading loading-infinity loading-xl"></span>
-      </div>}>
-        <Product productsPromise={productsPromise} />
-      </Suspense>
-      <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-200 py-10">
-        <Heading />
-        <Account />
-      </div>
-      <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-100 py-10">
-        <InfoHeading />
-        <Info />
+      <div className="space-y-10">
+        <Navbar />
+        <Banner />
+        <Summary />
+        <Suspense fallback={<div className="flex justify-center items-center min-h-screen">
+          <span className="loading loading-infinity loading-xl"></span>
+        </div>}>
+          <Product productsPromise={productsPromise} />
+        </Suspense>
+        <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-200 py-10">
+          <Heading />
+          <Account />
+        </div>
+        <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-100 py-10">
+          <InfoHeading />
+          <Info />
+        </div>
       </div>
       <div className="max-h-screen pt-20 bg-base-100">
         <Moreinfo />
-        <div className="bg-base-content p-5">
+        <div className="bg-[#101727] p-5">
           <Footer />
         </div>
       </div>
