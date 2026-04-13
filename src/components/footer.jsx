@@ -1,6 +1,6 @@
 import React from "react";
 const Footer = () => {
-  return <div className="w-9/12 mx-auto bg-base-content text-center p-5">
+  return <div className="w-9/12 mx-auto bg-base-content text-center py-20">
     <footer className="footer sm:footer-horizontal text-white p-10">
       <div className="text-left w-11/12">
         <h6 className="text-3xl font-bold">DigiTools</h6>
