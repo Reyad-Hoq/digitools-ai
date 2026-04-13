@@ -11,7 +11,7 @@ const Cart = ({ selectedCart, setSelectedCart, price, setPrice }) => {
   }
   return (
     <div>
-      <div className="shadow-lg w-9/12 mx-auto p-10 rounded-3xl">
+      <div className="shadow-lg w-full md:w-9/12 mx-auto p-10 rounded-3xl">
         {selectedCart.length === 0 ? <div className="text-center text-gray-500 text-2xl">Your cart is empty</div> : <div>
           <h1 className="text-xl font-bold py-4">Your Cart</h1>
           {

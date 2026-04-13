@@ -2,14 +2,14 @@ import React from "react";
 import bannerImg from "../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="hero bg-base-100 min-h-screen w-9/12 mx-auto">
+    <div className="hero w-full bg-base-100 min-h-screen md:w-9/12 mx-auto">
       <div className="hero-content flex-col lg:flex-row-reverse text-center lg:text-left gap-16">
         <img
           src={bannerImg}
-          className=" w-auto lg:max-w-sm rounded-lg shadow-2xl"
+          className=" w-9/12 lg:max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="text-5xl font-bold">Supercharge Your <br />Digital Workflow</h1>
+          <h1 className="md:text-5xl font-bold">Supercharge Your <br />Digital Workflow</h1>
           <p className="py-6">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today.

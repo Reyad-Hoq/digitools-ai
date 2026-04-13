@@ -2,7 +2,7 @@ import React from "react";
 
 const Info = () => {
   return (
-    <div className="max-w-9/12 mx-auto grid lg:grid-cols-3 bg-base-100 p-5 gap-10">
+    <div className="w-full md:w-9/12 mx-auto grid lg:grid-cols-3 bg-base-100 p-5 gap-10">
       <div className="card bg-base-100 shadow-lg rounded-2xl">
         <div className="card-body space-y-2">
           <h2 className="text-3xl font-bold">Starter</h2>
