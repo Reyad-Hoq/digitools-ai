@@ -6,6 +6,8 @@ import Summary from './components/summary'
 import Product from './products/product'
 import Account from './components/Account'
 import Heading from './components/heading'
+import Info from './components/info'
+import InfoHeading from './components/InfoHeading'
 import { ToastContainer } from 'react-toastify'
 
 const fetchProducts = async () => {
@@ -16,7 +18,7 @@ const fetchProducts = async () => {
 function App() {
   const productsPromise = fetchProducts();
   return (
-    <div className="space-y-15">
+    <div className="space-y-10">
       <Navbar />
       <Banner />
       <Summary />
@@ -28,6 +30,10 @@ function App() {
       <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-200">
         <Heading />
         <Account />
+      </div>
+      <div className="min-h-screen space-y-2 flex flex-col justify-center items-center bg-base-100">
+        <InfoHeading />
+        <Info />
       </div>
       {/* Toast Container */}
       <ToastContainer />

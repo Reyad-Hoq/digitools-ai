@@ -3,7 +3,7 @@ import Card from "../components/card";
 const Availableproduct = ({ products, selectedCart, setSelectedCart, price, setPrice }) => {
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full md:w-9/12 mx-auto">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full md:w-9/12 mx-auto bg-base-100 p-15 rounded-lg">
       {
         products.map((product) => {
           console.log(product);
