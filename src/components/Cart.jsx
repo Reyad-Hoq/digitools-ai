@@ -16,7 +16,7 @@ const Cart = ({ selectedCart, setSelectedCart, price, setPrice }) => {
           <h1 className="text-xl font-bold py-4">Your Cart</h1>
           {
             selectedCart.map((product) => {
-              return (<div className="list shadow bg-base-200 rounded-box mx-auto p-4 m-5" key={product.id}>
+              return (<div className=" list-none md:list shadow bg-base-200 rounded-box mx-auto p-4 m-5" key={product.id}>
                 <li className="list-row">
                   <div className="bg-base-100 w-10 h-10 flex items-center justify-center rounded-full"><img className=" rounded-full" src={product.icon} /></div>
                   <div className="list-col-grow space-y-2">
